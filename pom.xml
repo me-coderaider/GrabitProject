@@ -6,4 +6,8 @@
   <packaging>pom</packaging>
   <name>GrabitProject</name>
   <description>root project</description>
+  
+  <modules>
+		<module>GrabitCommon</module>
+  </modules>
 </project>
