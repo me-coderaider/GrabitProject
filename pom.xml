@@ -9,5 +9,6 @@
   
   <modules>
 		<module>GrabitCommon</module>
+		<module>GrabitWebParent</module>
   </modules>
 </project>
