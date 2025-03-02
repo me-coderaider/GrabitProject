@@ -7,8 +7,8 @@
 	<artifactId>GrabitWebParent</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>GrabitBackEnd</artifactId>
-	<name>GrabitBackEnd</name>
+	<artifactId>GrabitFrontEnd</artifactId>
+	<name>GrabitFrontEnd</name>
 	<description>parent spring web project</description>
 	<url/>
 	<licenses>
