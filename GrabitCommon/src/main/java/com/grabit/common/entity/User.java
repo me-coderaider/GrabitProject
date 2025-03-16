@@ -3,6 +3,7 @@ package com.grabit.common.entity;
 import java.util.HashSet;
 import java.util.Set;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +13,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
 @Entity
 @Table(name="users")
@@ -133,5 +135,16 @@ public class User {
 				+ ", roles=" + roles + "]";
 	}
 	
+	@Transient
+	public String getPhotosImagePath() {
+		if (id == null || photos == null) return "/images/default-user.png";
+		
+		return "/user-photos/" + this.id + "/" + this.photos;
+	}
+	
+	@Transient
+	public String getFullName() {
+		return firstName + " " + lastName;
+	}
 	
 }
